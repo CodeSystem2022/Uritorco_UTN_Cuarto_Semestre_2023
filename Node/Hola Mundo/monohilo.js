@@ -10,5 +10,5 @@ setInterval(function() {
     //   console.log('Forzamos un error');
     //   var a = 3 + z;
     // }
-},1000);
+},1000);s
 console.log('Segunda instrucción');
