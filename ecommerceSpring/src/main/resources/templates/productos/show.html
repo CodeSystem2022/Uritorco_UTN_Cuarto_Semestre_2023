@@ -48,11 +48,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td ></td>
-        <td ></td>
-        <td ></td>
-        <td ></td>
+      <tr th:each="prod:${productos}">
+        <td th:text="${prod.nombre}"></td>
+        <td th:text="${prod.descripcion}"></td>
+        <td th:text="${prod.cantidad}"></td>
+        <td th:text="${prod.precio}"></td>
         <td><a  class="btn btn-warning" href="">Editar</a> </td>
         <td><a  class="btn btn-danger" href="">Eliminar</a> </td>
       </tr>       

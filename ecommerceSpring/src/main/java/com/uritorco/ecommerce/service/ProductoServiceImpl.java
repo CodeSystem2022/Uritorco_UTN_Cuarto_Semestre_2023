@@ -1,10 +1,14 @@
 package com.uritorco.ecommerce.service;
 
+import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.uritorco.ecommerce.model.Producto;
 import com.uritorco.ecommerce.repository.ProductoRepository;
 
+@Service
 public class ProductoServiceImpl implements ProductoService {
 
     @Autowired
@@ -30,5 +34,10 @@ public class ProductoServiceImpl implements ProductoService {
     @Override
     public void update(Producto producto) {
         productoRepository.save(producto);
+    }
+
+    @Override
+    public List<Producto> findAll() {
+       return productoRepository.findAll();
     }
 }
