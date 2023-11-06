@@ -18,6 +18,15 @@ public class Producto {
     private String username;
     private double precio;
     private int cantidad;
+    private String imagen;
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
 
     @ManyToOne
     private Usuario usuario;
@@ -30,16 +39,18 @@ public class Producto {
     @Override
     public String toString() {
         return "Producto [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", username=" + username
-                + ", precio=" + precio + ", cantidad=" + cantidad + "]";
+                + ", precio=" + precio + ", cantidad=" + cantidad + ", imagen=" + imagen + ", usuario=" + usuario + "]";
     }
 
-    public Producto(Integer id, String nombre, String descripcion, String username, double precio, int cantidad, Usuario usuario) {
+    public Producto(Integer id, String nombre, String descripcion, String username, double precio, int cantidad,
+            String imagen, Usuario usuario) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.username = username;
         this.precio = precio;
         this.cantidad = cantidad;
+        this.imagen = imagen;
         this.usuario = usuario;
     }
 
