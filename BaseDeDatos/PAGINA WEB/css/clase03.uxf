@@ -1,0 +1,46 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>80</x><y>129</y><w>210</w><h>190</h></coordinates><panel_attributes>PC
+--
+- procesador
+- sistema operativo
+
+--
++ encender
++ abrir progrma
++ guardar archivo
++ cerrar programa
++ apagar
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>110</x><y>49</y><w>140</w><h>70</h></coordinates><panel_attributes>
+bg=pink
+Encapsulación</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>610</x><y>109</y><w>100</w><h>50</h></coordinates><panel_attributes>
+bg=pink
+Herencia</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>169</y><w>100</w><h>30</h></coordinates><panel_attributes>Materia</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>299</y><w>110</w><h>70</h></coordinates><panel_attributes>Laboratorio
+--
++ profesor
++ nota
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>299</y><w>110</w><h>70</h></coordinates><panel_attributes>Base de datos
+--
++ profesor
++ nota</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>299</y><w>110</w><h>70</h></coordinates><panel_attributes>Legislación
+--
++ profesor
++ nota</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>189</y><w>90</w><h>130</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;10;70;110</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>189</y><w>80</w><h>130</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>60;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>189</y><w>40</w><h>130</h></coordinates><panel_attributes>lt=.&gt;
+
+</panel_attributes><additional_attributes>10;10;20;110</additional_attributes></element><element><id>UMLNote</id><coordinates><x>520</x><y>499</y><w>210</w><h>70</h></coordinates><panel_attributes>
+bg=pink
+
+Polimorfismo</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>589</y><w>210</w><h>70</h></coordinates><panel_attributes>Vehículo
+--
++ Peso
++ Velocidad</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>739</y><w>210</w><h>70</h></coordinates><panel_attributes>  Auto
+--
++ Peso
++ Velocidad</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>739</y><w>210</w><h>70</h></coordinates><panel_attributes>  Moto
+--
++ Peso
++ Velocidad</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>649</y><w>140</w><h>110</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;10;120;90</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>649</y><w>130</w><h>110</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>110;10;10;90</additional_attributes></element></diagram>

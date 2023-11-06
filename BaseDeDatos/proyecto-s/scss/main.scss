@@ -1,0 +1,83 @@
+$primary-color: rgb(165, 163, 23);
+$primary-color: rgb(224, 124, 31);
+$primary-color: rgb(231, 231, 80);
+$quaternion-color:orange;
+$primary-text-color:rgb(212, 131, 9);
+$font-stack:'IBM Plex Sans', sans-serif;
+$paragraph-size:1,5em;
+
+body{
+    background-color: rgb(241, 208, 115);
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: $primary-text-color;
+    padding: 15px;
+    p{
+        font-size: 1.5;
+        padding-left: 30px ;
+    }
+    .icons{
+        display: flex;
+        gap: 15px;
+        button {
+            background: none;
+            border-style: none;
+        }
+    }
+}
+
+main{
+    background-color: $primary-color;
+}
+
+footer{
+    $background: rgb(245, 137, 14);
+    background-color: $background;
+    width: 100%;
+    height: 250px;
+}
+article{
+    width: auto;
+    color: $primary-text-color;
+    display: flex;
+    justify-content: space-around;
+
+    .info-section{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        gap:25px;
+    }
+    h1{font-size: 3em;
+        padding: 0px;
+        margin: 0px;
+    }
+    p{
+        font-size: $paragraph-size;
+    }
+    button{
+        width: 12vw;
+        padding: 20px;
+        background-color: $quaternion-color;
+        background: none;
+        border-style: none;
+        border-radius: 35px;
+        color: white;
+        font-size: 1rem;
+    }
+    .image-section{
+        width: 50%;
+        background-color: rgb(139, 132, 98);
+        img{
+            width: 25vw;
+            border-radius: 19px;
+        }
+    }
+}
