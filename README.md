@@ -41,4 +41,7 @@
 
 | SEMANA        | SCRUM MASTER  |
 |-------------- | ------------- |
-
+| 🖊️ semana 1   | Carlos Pereira  |
+| 🖊️ semana 2   | Verónica Díaz   |
+| 🖊️ semana 3	  | Jorge Luis Gómez|
+| 🖊️ semana 4	  | Karen Cerrudo   | 
