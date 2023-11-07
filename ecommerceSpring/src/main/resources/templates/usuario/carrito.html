@@ -19,7 +19,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Spring eCommerce</a>
+      <a class="navbar-brand" th:href="@{/}">Spring eCommerce</a>
 
       <form class="form-inline my-2 my-lg-0" method="post"
       action="#">
@@ -79,7 +79,7 @@
                   <td th:text="${dorden.precio}"></td>
                   <td th:text="${dorden.cantidad}"></td>
                   <td th:text="${dorden.total}"></td>
-                  <td><a href="#" class="btn btn-danger">Quitar</a></td>
+                  <td><a th:href="@{/delete/cart/{id} (id=${dorden.producto.id})}" class="btn btn-danger">Quitar</a></td>
                 </tr>
               </tbody>
             </table>
