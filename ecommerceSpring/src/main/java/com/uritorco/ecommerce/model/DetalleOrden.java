@@ -33,6 +33,13 @@ public class DetalleOrden {
         this.total = total;
     }
 
+    
+
+    public DetalleOrden() {
+    }
+
+
+
     @Override
     public String toString() {
         return "DetalleOrden [id=" + id + ", nombre=" + nombre + ", cantidad=" + cantidad + ", precio=" + precio
