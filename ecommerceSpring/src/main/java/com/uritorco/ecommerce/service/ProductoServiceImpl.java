@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.uritorco.ecommerce.model.Producto;
-import com.uritorco.ecommerce.repository.ProductoRepository;
+import com.uritorco.ecommerce.repository.IProductoRepository;
 
 @Service
 public class ProductoServiceImpl implements ProductoService {
 
     @Autowired
-    private ProductoRepository productoRepository;
+    private IProductoRepository productoRepository;
 
     @Override
     public void delete(Integer id) {

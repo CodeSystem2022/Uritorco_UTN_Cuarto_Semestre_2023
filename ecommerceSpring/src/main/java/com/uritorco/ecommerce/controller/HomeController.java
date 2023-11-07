@@ -16,17 +16,23 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.uritorco.ecommerce.model.DetalleOrden;
 import com.uritorco.ecommerce.model.Orden;
 import com.uritorco.ecommerce.model.Producto;
+import com.uritorco.ecommerce.model.Usuario;
+import com.uritorco.ecommerce.service.IUsuarioService;
 import com.uritorco.ecommerce.service.ProductoService;
 
 @Controller
 @RequestMapping("/")
 public class HomeController {
 
+    @Autowired //autowired inyecta una instancia de la clase
+    private ProductoService productoService;
+
+    @Autowired
+    private IUsuarioService usuarioService;
+
     List<DetalleOrden> detalles = new ArrayList<DetalleOrden>(); //Lista de detalles para pasar del carrito al checkout
     Orden orden = new Orden(); //Datos del pedido
 
-    @Autowired //autowired inyecta una instancia de la clase
-    private ProductoService productoService;
 
     @GetMapping("")
     public String home(Model model) {
@@ -116,4 +122,15 @@ public class HomeController {
         return "/usuario/carrito";
     }
 
+    @GetMapping("/order")
+    public String order(Model model) {
+
+        Usuario usuario = usuarioService.findById(1).get();
+
+        model.addAttribute("cart", detalles);
+        model.addAttribute("orden", orden);
+        model.addAttribute("usuario", usuario);
+
+        return "/usuario/resumenorden";
+    }
 }
