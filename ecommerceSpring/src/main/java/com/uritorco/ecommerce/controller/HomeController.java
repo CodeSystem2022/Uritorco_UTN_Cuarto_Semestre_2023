@@ -1,6 +1,7 @@
 package com.uritorco.ecommerce.controller;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,6 +18,8 @@ import com.uritorco.ecommerce.model.DetalleOrden;
 import com.uritorco.ecommerce.model.Orden;
 import com.uritorco.ecommerce.model.Producto;
 import com.uritorco.ecommerce.model.Usuario;
+import com.uritorco.ecommerce.service.IDetalleOrdenService;
+import com.uritorco.ecommerce.service.IOrdenService;
 import com.uritorco.ecommerce.service.IUsuarioService;
 import com.uritorco.ecommerce.service.ProductoService;
 
@@ -29,6 +32,12 @@ public class HomeController {
 
     @Autowired
     private IUsuarioService usuarioService;
+
+    @Autowired
+    private IOrdenService ordenService;
+
+    @Autowired
+    private IDetalleOrdenService detalleOrdenService;
 
     List<DetalleOrden> detalles = new ArrayList<DetalleOrden>(); //Lista de detalles para pasar del carrito al checkout
     Orden orden = new Orden(); //Datos del pedido
@@ -133,4 +142,29 @@ public class HomeController {
 
         return "/usuario/resumenorden";
     }
+
+    @GetMapping("/saveOrder")
+    public String saveOrder() {
+        
+        Date fechaCreacion = new Date();
+        orden.setFechaCreacion(fechaCreacion);
+        orden.setNumero(ordenService.generarNumeroOrden());
+        
+        Usuario usuario = usuarioService.findById(1).get();
+        orden.setUsuario(usuario);
+        ordenService.save(orden);
+
+        //Para guardar los detalles del pedido
+        for (DetalleOrden dt:detalles) {
+            dt.setOrden(orden);
+            detalleOrdenService.save(dt);
+        }
+
+        orden = new Orden();
+        detalles.clear();
+        
+        return "redirect:/";
+    }
+
+    
 }
