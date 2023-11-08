@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="es">
 
 <head>
 
@@ -7,16 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Springfield</title>
+
+  <title>Spring eCommerce</title>
   <link th:href="@{/vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
-  <link th:href="@{css/heroic-features.css}" rel="stylesheet}">
+  <link th:href="@{/css/heroic-features.css}" rel="stylesheet}">
 
 </head>
 
 <body>
 
-    <div th:include="usuario/template_usuario.html::header" th:if="${sesion==null}"></div>
-    <div th:include="usuario/template_usuario.html::header-user" th:unless="${sesion==null}"></div>
+  <div th:include="administrador/template_admin.html::header"></div>
 
     <!-- Page Content -->
     <div class="container">
@@ -24,12 +24,12 @@
 
       <!-- Page Heading/Breadcrumbs -->
       <h1 class="mt-4 mb-3">
-        Spring eCommerce <small>Compras</small>
+        Spring eCommerce <small>r23g</small>
       </h1>
 
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a th:href="@{/}">Inicio</a></li>
-        <li class="breadcrumb-item active">Compras</li>
+        <li class="breadcrumb-item"><a th:href="@{/}">Home</a></li>
+        <li class="breadcrumb-item active">Ordenes</li>
       </ol>
 
       <!-- Blog Post -->
@@ -40,18 +40,18 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">No. de Orden</th>
+                  <th scope="col">N.° Orden</th>
                   <th scope="col">Fecha</th>
                   <th scope="col">Valor</th>
                   <th scope="col">Acción</th>
                 </tr>
               </thead>
               <tbody>
-                <tr th:each="orden: ${ordenes}">
+                <tr th:each="orden:${ordenes}">
                   <td th:text="${orden.numero}"></td>
                   <td th:text="${orden.fechaCreacion}"></td>
                   <td th:text="${orden.total}"></td>
-                  <td><a th:href="@{/usuario/detalle/{id} (id=${orden.id}) }" class="btn btn-success">Ver Detalle</a></td>
+                  <td><a href="detallecompra.html" class="btn btn-success">Ver Detalle</a></td>
                 </tr>
               </tbody>
             </table>
@@ -63,7 +63,7 @@
   <!-- /.container -->
 
     <!-- Footer -->
-    <div th:include="usuario/template_usuario.html::footer"></div>
+    <div th:include="administrador/template_admin.html::footer"></div>
 
     <!-- JavaScript -->
     <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
