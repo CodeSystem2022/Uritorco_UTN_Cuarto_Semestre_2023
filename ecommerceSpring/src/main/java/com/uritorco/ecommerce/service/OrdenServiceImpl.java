@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.uritorco.ecommerce.model.Orden;
+import com.uritorco.ecommerce.model.Usuario;
 import com.uritorco.ecommerce.repository.IOrdenRepository;
 
 @Service
@@ -58,5 +59,9 @@ public class OrdenServiceImpl implements IOrdenService {
 
         return numeroConcat;
     }
-    
+
+    @Override
+    public List<Orden> findByUsuario(Usuario usuario) {
+        return ordenRepository.findByUsuario(usuario);
+    }   
 }

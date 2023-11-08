@@ -16,8 +16,12 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.uritorco.ecommerce.model.Producto;
 import com.uritorco.ecommerce.model.Usuario;
+import com.uritorco.ecommerce.service.IUsuarioService;
 import com.uritorco.ecommerce.service.ProductoService;
 import com.uritorco.ecommerce.service.UploadFileService;
+
+
+import jakarta.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/productos")
@@ -31,6 +35,9 @@ public class ProductoController {
     @Autowired
     private UploadFileService upload;
 
+    @Autowired
+    private IUsuarioService usuarioService;
+
     @GetMapping("")
     public String show(Model model) {
         model.addAttribute("productos", productoService.findAll());
@@ -43,9 +50,9 @@ public class ProductoController {
     }
 
     @PostMapping("/save")
-    public String save(Producto producto, @RequestParam("img") MultipartFile file) throws IOException {
-        LOGGER.info("La wea funciona? -> objeto producto {}", producto);
-        Usuario u = new Usuario(1, "", "", "", "", "", "", "");
+    public String save(Producto producto, @RequestParam("img") MultipartFile file, HttpSession httpSession) throws IOException {
+        
+        Usuario u = usuarioService.findById(Integer.parseInt(httpSession.getAttribute("idusuario").toString())).get();
         producto.setUsuario(u);
 
         if (producto.getId() == null) {
