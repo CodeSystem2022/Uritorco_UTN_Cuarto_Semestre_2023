@@ -81,8 +81,11 @@
             <li class="list-group-item"><h5 th:text=" 'Total: ' + ${orden.total}"> </h5></li>
             <a th:href="@{/saveOrder}" class="btn btn-dark">Generar</a>
           </ul>
+
+          
         </div>
       </div>
+      <div id="wallet_container"></div>
     </div>
   </div>
   <!-- /.container -->
@@ -93,6 +96,23 @@
   <!-- JavaScript -->
   <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
   <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+  
+  <!-- SDK MercadoPago.js -->
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+
+  <script>
+    const mp = new MercadoPago('TEST-c5933cab-f3ee-4435-9eb9-87de93b6a6ce');
+    const bricksBuilder = mp.bricks();
+
+    mp.bricks().create("wallet", "wallet_container", {
+      initialization: {
+        preferenceId: "<PREFERENCE_ID>",
+        redirectMode: "modal"
+      },
+    });
+
+  </script>
 
 </body>
 

@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "stripe.api.publicKey",
+  "type": "java.lang.String",
+  "description": "A description for 'stripe.api.publicKey'"
+}]}

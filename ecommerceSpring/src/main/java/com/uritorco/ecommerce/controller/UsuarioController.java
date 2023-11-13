@@ -27,6 +27,8 @@ public class UsuarioController {
 
     @Autowired
     private IOrdenService ordenService;
+    
+   // BCryptPasswordEncoder passEncode = new BCryptPasswordEncoder();
 
     @GetMapping("/registro")
     public String create() {
@@ -38,6 +40,7 @@ public class UsuarioController {
     public String save(Usuario usuario) {
         
         usuario.setTipo("USER");
+        //usuario.setPassword(passEncode.encode(usuario.getPassword()));
         usuarioService.save(usuario);
         
         return "redirect:/";
@@ -94,7 +97,6 @@ public class UsuarioController {
     public String cerrarSesion(HttpSession httpSession){
 
         httpSession.removeAttribute("idusuario");
-        
 
         return "redirect:/";
     }

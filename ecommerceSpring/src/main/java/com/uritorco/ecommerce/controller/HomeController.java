@@ -28,6 +28,7 @@ import jakarta.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/")
+
 public class HomeController {
 
     @Autowired //autowired inyecta una instancia de la clase
@@ -145,7 +146,7 @@ public class HomeController {
         model.addAttribute("orden", orden);
         model.addAttribute("usuario", usuario);
 
-        return "/usuario/resumenorden";
+        return "usuario/resumenorden";
     }
 
     @GetMapping("/saveOrder")
@@ -169,6 +170,7 @@ public class HomeController {
         detalles.clear();
         
         return "redirect:/";
+  
     }
 
     @PostMapping("/search")
