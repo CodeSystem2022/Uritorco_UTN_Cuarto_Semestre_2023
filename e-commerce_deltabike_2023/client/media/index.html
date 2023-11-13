@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+	<script src="https://sdk.mercadopago.com/js/v2"></script>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<title>.: Delta Bike:.</title>
+	<!-- CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<!-- FUENTES -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+    
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/jquery.BlackAndWhite.js"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
+			});
+		});
+		
+	</script>
+	
+</head>
+
+
+
+
+
+<!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<div class="preloader_hide">
+
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+						<a href="index.html" >
+                            <img src="images/logo.png" />
+					</div><!-- //LOGO -->
+
+
+
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="#home">Home</a></li>
+								<li class="scroll_btn"><a href="#about" >Deltabike</a></li>
+                                <li class="scroll_btn"><a href="#fotos" >Fotos</a></li>
+								<li class="scroll_btn"><a href="#projects" >Productos</a></li>
+								<li class="scroll_btn"><a href="#team" >Catalogos</a></li>
+								<li class="scroll_btn"><a href="#contacts" >Contacto</a></li>
+								<li class="scroll_btn"><a href="#tienda" >Tienda</a></li>
+								<li class="scroll_btn last"><a href="#redes" >Redes</a></li>
+								
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTENEDOR -->
+		</header><!-- //HEADER -->
+		
+		
+		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+			<!-- TOP SLIDER -->
+			<div class="flexslider top_slider">
+				<ul class="slides">
+					<li class="slide1">
+					
+				</ul>
+			</div>
+		
+		</section><!-- //HOME -->
+
+		<!-- DELTABIKE -->
+		<section id="about">
+
+			<!-- CONTENEDOR -->
+			<div class="container">
+				<h2><b></b></h2>
+				
+				<!-- FOTOS -->
+				<div class="testimonials" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- SLIDE DE FOTOS -->
+					<div class="owl-demo owl-carousel testim_slider">
+						
+						<!-- FOTO_1 -->
+						<div class="item">
+							<div class="testim_content">“Es una empresa dedicada a la fabricación distribución, reparado y venta de bicicletas e indumentaria para el ciclista profesional y aficionado. Contamos con mas de 14 años de experiencia.”</div>
+							<div class="testim_author"><b>Delta Bike</b></div>
+						</div><!-- FOTO_1 -->
+						
+						<!-- FOTO_2 -->
+						<div class="item">
+							<div class="testim_content">“Vairo, Raleigh, Diamond Back y Otras marcas 12 Cuotas S/Interés. Consúltenos Toda la Alta Gama - Bicis para Chicos - Todas las Tarjetas - Stock Permanente.”</div>
+							<div class="testim_author"><b>Bicicletas y Repuestos</b></div>
+						</div><!-- FOTO_2 -->
+						
+						<!-- FOTO_3 -->
+						<div class="item">
+							<div class="testim_content">“Encontrarás los mejores productos y las últimas novedades en ciclismo, competición, indumentaria y accesorios de marcas nacionales e internacionales.”</div>
+							<div class="testim_author"><b>Accesorios e Indumentaria</b></div>
+						</div><!-- FOTO_3 -->
+                        
+                        	<!-- FOTO_4 -->
+						<div class="item">
+							<div class="testim_content">“Además ofrecemos un servicio de asistencia mecánica, repuestos y accesorios, así como también asesoramiento personalizado para que tu viaje en bicicleta, tu paseo o tu próxima aventura sean sinónimo de éxito y placer.”</div>
+							<div class="testim_author"><b>Taller Especializado</b></div>
+						</div><!-- FOTO_4 -->
+                        
+                        
+					</div><!-- SLIDE DE FOTOS -->
+				</div><!-- //DELTABIKE -->
+				
+				
+			</div><!-- //CONTENEDOR -->
+			
+	
+		</section><!-- //DELTABIKE -->
+            
+            
+            <!-- FOTOS -->
+		<section id="fotos" class="padbot20">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b>Fotos</b></h2>
+			</div><!-- //CONTAINER -->
+			
+				
+			<div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+				<!-- FOTOS SLIDER -->
+				<div class="owl-demo owl-carousel projects_slider">
+					
+					<!-- work1 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/fotos/1.jpg" alt="" />
+								<a class="zoom" href="images/fotos/1.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" ></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work1 -->
+					
+					<!-- work2 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/fotos/2.jpg" alt="" />
+								<a class="zoom" href="images/fotos/2.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" ></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work2 -->
+					
+					<!-- work3 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/fotos/3.jpg" alt="" />
+								<a class="zoom" href="images/fotos/3.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" ></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work3 -->
+					
+					<!-- work4 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/fotos/4.jpg" alt="" />
+								<a class="zoom" href="images/fotos/4.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" ></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work4 -->
+					
+					<!-- work5 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/fotos/5.jpg" alt="" />
+								<a class="zoom" href="images/fotos/5.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" ></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work5 -->
+					
+					<!-- work6 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/fotos/6.jpg" alt="" />
+								<a class="zoom" href="images/fotos/6.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" ></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work6 -->
+					
+					<!-- work7 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/fotos/7.jpg" alt="" />
+								<a class="zoom" href="images/fotos/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" ></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work7 -->
+                    
+                    		<!-- work8 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/fotos/8.jpg" alt="" />
+								<a class="zoom" href="images/fotos/8.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" ></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work8 -->
+                    
+                          		<!-- work9 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/fotos/9.jpg" alt="" />
+								<a class="zoom" href="images/fotos/9.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" ></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work9 -->
+                    
+                              		<!-- work 10 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/fotos/10.jpg" alt="" />
+								<a class="zoom" href="images/fotos/10.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" ></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work 10 -->
+                    
+                                       		<!-- work 11 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/fotos/11.jpg" alt="" />
+								<a class="zoom" href="images/fotos/11.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" ></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work 11 -->
+                    
+                                           		<!-- work 12 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/fotos/12.jpg" alt="" />
+								<a class="zoom" href="images/fotos/12.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" ></a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work 11 -->
+                    
+				</div><!-- //PROJECTS SLIDER -->
+		
+		
+		<!-- PROJECTS -->
+		<section id="projects" class="padbot20">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b>Productos</b></h2>
+			</div><!-- //CONTAINER -->
+			
+				
+			<div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+				<!-- PROJECTS SLIDER -->
+				<div class="owl-demo owl-carousel projects_slider">
+					
+					<!-- work1 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/1.jpg" alt="" />
+								<a class="zoom" href="images/works/1.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" >Cambios</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work1 -->
+					
+					<!-- work2 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/2.jpg" alt="" />
+								<a class="zoom" href="images/works/2.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" >Cuadros</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work2 -->
+					
+					<!-- work3 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/3.jpg" alt="" />
+								<a class="zoom" href="images/works/3.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" >Horquillas</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work3 -->
+					
+					<!-- work4 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/4.jpg" alt="" />
+								<a class="zoom" href="images/works/4.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" >Frenos</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work4 -->
+					
+					<!-- work5 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/5.jpg" alt="" />
+								<a class="zoom" href="images/works/5.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" >Asientos</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work5 -->
+					
+					<!-- work6 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/6.jpg" alt="" />
+								<a class="zoom" href="images/works/6.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" >Cascos</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work6 -->
+					
+					<!-- work7 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/7.jpg" alt="" />
+								<a class="zoom" href="images/works/7.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" >Luces</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work7 -->
+                    
+                    		<!-- work8 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/8.jpg" alt="" />
+								<a class="zoom" href="images/works/8.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" >Manubrios</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work8 -->
+                    
+                          		<!-- work9 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/9.jpg" alt="" />
+								<a class="zoom" href="images/works/9.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" >Llantas</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work9 -->
+                    
+                              		<!-- work 10 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/10.jpg" alt="" />
+								<a class="zoom" href="images/works/10.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" >Pedales</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work 10 -->
+                    
+                                       		<!-- work 11 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/11.jpg" alt="" />
+								<a class="zoom" href="images/works/11.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" >Seguridad</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work 11 -->
+                    
+                                           		<!-- work 12 -->
+					<div class="item">
+						<div class="work_item">
+							<div class="work_img">
+								<img src="images/works/12.jpg" alt="" />
+								<a class="zoom" href="images/works/12.jpg" rel="prettyPhoto[portfolio1]" ></a>
+							</div>
+							<div class="work_description">
+								<div class="work_descr_cont">
+									<a href="" >Piñon / Cadenas</a>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div><!-- //work 11 -->
+                    
+				</div><!-- //PROJECTS SLIDER -->
+			</div>
+			
+			
+			<!-- OUR CLIENTS -->
+			<div class="our_clients">
+                
+                	<!-- CONTAINER -->
+			<div class="container">
+				<h2><b>Marcas</b></h2>
+			</div><!-- //CONTAINER -->
+			
+				<!-- CONTAINER -->
+				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+					
+					<!-- ROW -->
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
+							<img src="images/clients/1.jpg" alt="" />
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
+							<img src="images/clients/2.jpg" alt="" />
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
+							<img src="images/clients/3.jpg" alt="" />
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
+							<img src="images/clients/4.jpg" alt="" />
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
+							<img src="images/clients/5.jpg" alt="" />
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 client_img">
+							<img src="images/clients/6.jpg" alt="" />
+						</div>
+					</div><!-- //ROW -->
+				</div><!-- CONTAINER -->
+			</div><!-- //OUR CLIENTS -->
+		</section><!-- //PROJECTS -->
+		
+		
+		<!-- TEAM -->
+		<section id="team">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b>Catalogos</b></h2>
+				
+				<!-- ROW -->
+				<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- TEAM SLIDER -->
+					<div class="owl-demo owl-carousel team_slider">
+				
+					
+                        
+                        	<!-- crewman1 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/1.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										
+									</div>
+								</div>
+								<div class="crewman_social">
+									
+									<a href="http://venzoargentina.com/bicicletas.html" ><i class="fa fa-facebook-square"></i></a>
+									 
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman2 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/2.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="http://www.bicicletasraleigh.com.ar/" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman1 -->
+						
+						<!-- crewman3 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/3.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="http://www.ford.com.ar/acerca/novedades-result?article=1249167049876" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman3 -->
+						
+						<!-- crewman4 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/4.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="https://www.diamondback.com/" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman4 -->
+						
+						<!-- crewman5 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/5.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										
+									</div>
+								</div>
+								<div class="crewman_social">
+									
+									
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman5 -->
+						
+			
+						
+					
+					</div><!-- TEAM SLIDER -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->
+		</section><!-- //TEAM -->
+		
+		
+		
+	</div><!-- //PAGE -->
+	
+	<!-- CONTACTS -->
+	<section id="contacts">
+        
+        <!-- CONTAINER -->
+			<div class="container">
+				<h2><b>Contactos</b></h2>
+                
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13163.008811832102!2d-58.568458!3d-34.4330489!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x889e09659949d00c!2sDelta+Bike!5e0!3m2!1ses!2sar!4v1490820114529" width="600" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                
+                	<div class="col-md-4 footer-leftcol">
+						<p><span class="bold-16p">Av. Cazón 222 - (1648) Tigre</span><br>
+						Tel./Fax: 4731 - BICI (2424)<br>
+						Buenos Aires, Argentina <br><a href="mailto:deltabike@hotmail.com">deltabike@hotmail.com</a>
+						</p>
+					</div>
+                
+                </div>
+        <br><!-- //CONTAINER -->
+        
+	</section><!-- //CONTACTS -->
+
+			<section id="tienda">
+
+				<!-- CONTENEDOR -->
+				<div class="container">
+
+					<h2><b>Tienda</b></h2>
+
+					<body>
+					<main>
+
+						<div id="contenedor-productos" class="contenedor-productos">
+							<!-- Esto se va a rellenar con JS -->
+							<!--contenido del ecommerce :: DeltaBike ::-->
+
+							<div class="card-products-container">
+								<div class="card-products" id="shopContent"></div>
+							</div>
+							<!--botón del carrito-->
+							<div class="cart-btn" id="cart-btn">🛒</div>
+							<!--contador del carrito-->
+							<span class="cart-counter" id="cart-counter">0</span>
+							<!--modal-->
+							<div class="modal-overlay" id="modal-overlay"></div>
+							<div class="modal-container" id="modal-container"></div>
+
+						</div>
+					</main>
+				</div>
+				<script src="/client/js/products.js"></script>
+				<script src="/client/js/index.js"></script>
+				<script src="/client/js/cart.js"></script>
+				</body>
+
+				<br><!-- //TIENDA -->
+
+			</section><!-- //CONTACTS -->
+
+			<section id="redes">
+
+				<!-- CONTENEDOR -->
+				<div class="container">
+					<h2><b>Nuestras Redes</b></h2>
+
+
+
+			</section><!-- //CONTACTS -->
+
+	<!-- MAP -->
+	<div id="map">
+		<a class="map_hide" href="javascript:void(0);"><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
+		<iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed" ></iframe>
+	</div><!-- //MAP -->
+
+</div>
+</body>
+</html>
