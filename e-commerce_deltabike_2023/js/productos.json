@@ -1,0 +1,216 @@
+[
+    {
+        "id": "bicicleta_01",
+        "titulo": "Huayra",
+        "imagen": "./img/bicicletas/01.jpg",
+        "categoria": {
+            "nombre": "Huayra",
+            "id": "bicicletas"
+        },
+        "precio": 419000
+    },
+    {
+        "id": "bicicleta_02",
+        "titulo": "Toga",
+        "imagen": "./img/bicicletas/02.jpg",
+        "categoria": {
+            "nombre": "Toga",
+            "id": "bicicletas"
+        },
+        "precio": 750000
+    },
+    {
+        "id": "bicicleta_03",
+        "titulo": "Riva",
+        "imagen": "./img/bicicletas/03.jpg",
+        "categoria": {
+            "nombre": "Riva",
+            "id": "bicicletas"
+        },
+        "precio": 550000
+    },
+    {
+        "id": "bicicleta_04",
+        "titulo": "Arena 14",
+        "imagen": "./img/bicicletas/04.jpg",
+        "categoria": {
+            "nombre": "Arena 14",
+            "id": "bicicletas"
+        },
+        "precio": 150000
+    },
+    {
+        "id": "bicicleta_05",
+        "titulo": "Chopera",
+        "imagen": "./img/bicicletas/05.jpg",
+        "categoria": {
+            "nombre": "Chopera",
+            "id": "bicicletas"
+        },
+        "precio": 125000
+    },
+
+    {
+        "id": "accesorios_01",
+        "titulo": "Cambios Shimano",
+        "imagen": "./img/accesorios/01.jpg",
+        "categoria": {
+            "nombre": "Cambios Shimano",
+            "id": "accesorios"
+        },
+        "precio": 7500
+    },
+    {
+        "id": "accesorios_02",
+        "titulo": "Cuadros",
+        "imagen": "./img/accesorios/02.jpg",
+        "categoria": {
+            "nombre": "Cuadros",
+            "id": "accesorios"
+        },
+        "precio": 525000
+    },
+    {
+        "id": "accesorios_03",
+        "titulo": "Horquillas",
+        "imagen": "./img/accesorios/03.jpg",
+        "categoria": {
+            "nombre": "Horquillas",
+            "id": "accesorios"
+        },
+        "precio": 55000
+    },
+    {
+        "id": "accesorios_04",
+        "titulo": "Frenos V-Brake",
+        "imagen": "./img/accesorios/04.jpg",
+        "categoria": {
+            "nombre": "Frenos V-Brake",
+            "id": "accesorios"
+        },
+        "precio": 23000
+    },
+    {
+        "id": "accesorios_05",
+        "titulo": "Luces Led",
+        "imagen": "./img/accesorios/05.jpg",
+        "categoria": {
+            "nombre": "Luces Led",
+            "id": "accesorios"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "accesorios_06",
+        "titulo": "Pedales",
+        "imagen": "./img/accesorios/06.jpg",
+        "categoria": {
+            "nombre": "Pedales",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios_07",
+        "titulo": "Ropa de Ciclismo",
+        "imagen": "./img/accesorios/07.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "accesorios"
+        },
+        "precio": 25000
+    },
+    {
+        "id": "accesorios_08",
+        "titulo": "Calzado",
+        "imagen": "./img/accesorios/08.jpg",
+        "categoria": {
+            "nombre": "Camisetas",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+
+    {
+        "id": "indumentaria_01",
+        "titulo": "Buzo termico",
+        "imagen": "./img/indumentaria/01.jpg",
+        "categoria": {
+            "nombre": "Buzo termico",
+            "id": "indumentaria"
+        },
+        "precio": 25000
+    },
+    {
+        "id": "indumentaria_02",
+        "titulo": "Calzado",
+        "imagen": "./img/indumentaria/02.jpg",
+        "categoria": {
+            "nombre": "Calzado",
+            "id": "indumentaria"
+        },
+        "precio": 25000
+    },
+    {
+        "id": "indumentaria_03",
+        "titulo": "Lentes",
+        "imagen": "./img/indumentaria/03.jpg",
+        "categoria": {
+            "nombre": "Lentes",
+            "id": "indumentaria"
+        },
+        "precio": 25000
+    },
+    {
+        "id": "indumentaria_04",
+        "titulo": "Calzas",
+        "imagen": "./img/indumentaria/04.jpg",
+        "categoria": {
+            "nombre": "Calzas",
+            "id": "indumentaria"
+        },
+        "precio": 25000
+    },
+
+    {
+        "id": "insumos_01",
+        "titulo": "Cascos",
+        "imagen": "./img/insumos/01.jpg",
+        "categoria": {
+            "nombre": "Cascos",
+            "id": "insumos"
+        },
+        "precio": 11000
+    },
+    {
+        "id": "insumos_02",
+        "titulo": "Cámaras",
+        "imagen": "./img/insumos/02.jpg",
+        "categoria": {
+            "nombre": "Cámaras",
+            "id": "insumos"
+        },
+        "precio": 5000
+    },
+    {
+        "id": "insumos_03",
+        "titulo": "Gomas",
+        "imagen": "./img/insumos/03.jpg",
+        "categoria": {
+            "nombre": "Gomas",
+            "id": "insumos"
+        },
+        "precio": 5000
+    },
+    {
+        "id": "insumos_04",
+        "titulo": "Soportes",
+        "imagen": "./img/insumos/04.jpg",
+        "categoria": {
+            "nombre": "Soportes",
+            "id": "insumos"
+        },
+        "precio": 5000
+    }
+]
+
