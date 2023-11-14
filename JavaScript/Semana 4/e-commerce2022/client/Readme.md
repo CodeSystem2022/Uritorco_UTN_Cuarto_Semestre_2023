@@ -1,1 +1,0 @@
-Tienda que vende Joysticks 
