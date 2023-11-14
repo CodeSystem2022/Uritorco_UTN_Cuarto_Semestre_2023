@@ -95,7 +95,7 @@ if (!empty($_POST)) {
 
     <!-- Contenido -->
     <main class="flex-shrink-0">
-        <div class="container">
+        <div class="container pt-5 mt-5">
             <h3>Datos del cliente</h3>
 
             <?php mostrarMensajes($errors); ?>

@@ -48,7 +48,7 @@ $imagenPrincipal = $rutaImagenes . 'principal.jpg';
         <h2 class="mt-4">Modificar producto</h2>
         
         <form action="actualiza.php" method="post" autocomplete="off" enctype="multipart/form-data">
-            <input type="hidden" name="id" value="8">
+            <input type="hidden" name="id" value="<?php //echo $producto['id']; ?>">
             <!--  <?php //echo $producto['id']; ?>  -->
             
             <div class="mb-3">

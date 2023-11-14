@@ -53,7 +53,7 @@ $sqlDetalle->execute([$idCompra]);
 
     <!-- Contenido -->
     <main class="flex-shrink-0">
-        <div class="container">
+        <div class="container mt-5 pt-5">
 
             <div class="row">
                 <div class="col-12 col-md-4">
