@@ -23,3 +23,5 @@ https://github.com/CodeSystem2022/Uritorco_UTN_Cuarto_Semestre_2023/blob/03d4f02
 https://github.com/CodeSystem2022/Uritorco_UTN_Cuarto_Semestre_2023/blob/03d4f02f0fe8aa98c221e364f376f17b9467d883/ecommerce_2023_deltabike_PHP/screens/fotos.jpg 
 
 ## Información 🎫 
+  <br>
+https://github.com/CodeSystem2022/Uritorco_UTN_Cuarto_Semestre_2023/wiki/Wikitorco
